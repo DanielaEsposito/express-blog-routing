@@ -55,6 +55,11 @@ router.post ("/", (req,res)=>{
 
 });
 //Update
+router.put ("/:id", (req,res)=>{
+    const {id} = req.params;
+    res.json(`modifica il post con id: ${id}`);
+
+});
 //Modify
 //Delete
 module.exports= router
