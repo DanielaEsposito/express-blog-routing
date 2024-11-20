@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 
-
-router.get('/bacheca',(req, res)=> {
+// index
+router.get('/',(req, res)=> {
     const posts =[
 {   
     titolo: "Ciambellone",
@@ -40,4 +40,16 @@ res.json({
     posts :posts
 })
 })
+
+// Show
+router.get ("/:id", (req,res)=>{
+    const {id} = req.params;
+    res.json(`mostra il post con id : ${id}`);
+
+});
+
+//Create
+//Update
+//Modify
+//Delete
 module.exports= router
