@@ -61,5 +61,15 @@ router.put ("/:id", (req,res)=>{
 
 });
 //Modify
+router.patch ("/:id", (req,res)=>{
+    const {id} = req.params;
+    res.json(`modifica parziale il post con id: ${id}`);
+
+});
 //Delete
+router.delete ("/:id", (req,res)=>{
+    const {id} = req.params;
+    res.json(`eliminazione del post con id: ${id}`);
+
+});
 module.exports= router
