@@ -49,6 +49,11 @@ router.get ("/:id", (req,res)=>{
 });
 
 //Create
+router.post ("/", (req,res)=>{
+    const {id} = req.params;
+    res.json(`crea un nuovo post`);
+
+});
 //Update
 //Modify
 //Delete
