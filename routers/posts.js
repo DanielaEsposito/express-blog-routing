@@ -40,4 +40,4 @@ res.json({
     posts :posts
 })
 })
-module.exports()
+module.exports= router
